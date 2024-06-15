@@ -45,6 +45,12 @@ public class ListController {
         model.addAttribute("skills", skillRepository.findAll());
         return "list";
     }
+//    @GetMapping("")
+//    public String displayList(Model model) {
+//        model.addAttribute("employers", employerRepository.findAll());
+//        model.addAttribute("skills", skillRepository.findAll());
+//        return "list";
+//    }
 
     @RequestMapping(value = "jobs")
     public String listJobsByColumnAndValue(Model model, @RequestParam String column, @RequestParam String value) {
